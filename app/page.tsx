@@ -5,10 +5,10 @@ import Navbar from "@/app/ui/Navbar";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>tech-ascend</title>
-      </Head>
       <RootLayout>
+        <Head>
+          <title>tech-ascend</title>
+        </Head>
         <header>
           <Navbar />
         </header>

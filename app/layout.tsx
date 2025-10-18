@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${sora.className} antialiased`}>{children}</body>
+      <body className={`${sora.className} antialiased w-full`}>{children}</body>
     </html>
   );
 }

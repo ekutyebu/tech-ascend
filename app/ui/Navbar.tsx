@@ -3,7 +3,7 @@ import { LogoMobile } from "@/app/ui/Logo";
 
 export default function Navbar() {
   return (
-    <div className="flex p-4 justify-between items-center">
+    <div className="flex p-4 justify-between items-center items">
       <div className="logo">
         <LogoMobile />
       </div>

@@ -51,8 +51,8 @@ const config: Config = {
     // },
   },
   // plugins: [require('@tailwindcss/forms')],
- plugins: [
-     require('autoprefixer')
-  ]
+//  plugins: [
+//      require('autoprefixer')
+//   ]
 };
 export default config;
