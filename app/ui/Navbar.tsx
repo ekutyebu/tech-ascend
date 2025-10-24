@@ -11,7 +11,7 @@ import UserIcon from "@/public/icons/getStarted-icon.png";
 export const NavContentsLeft = () => {
   return (
     <div>
-      <ul>
+      <ul className="md:flex items-center gap-[3rem]">
         <li>
           <Link href={""}>About Us</Link>
         </li>
@@ -29,7 +29,7 @@ export const NavContentsLeft = () => {
 export const NavContentsRight = () => {
   return (
     <div>
-      <ul>
+      <ul className=" md:flex items-center gap-[3rem]">
         <li>
           <Link href={""}>Login</Link>
         </li>
@@ -56,17 +56,24 @@ export default function Navbar() {
           <LogoMobile />
         </div>
         <div className="flex gap-[1rem] md:hidden relative">
-          <Image src={UserIcon} alt="User profile" width={32} height={32} />
+          <Image
+            src={UserIcon}
+            alt="User profile"
+            width={20}
+            height={20}
+            className="w-auto h-auto"
+          />
           <button onClick={handleMenuToggle} className="focus:outline-none">
             <Image
               src={isMenuOpen ? HamIconC : HamIconO}
               alt={isMenuOpen ? "Close menu" : "Open menu"}
               width={24}
               height={24}
+              className="w-auto h-auto"
             />
           </button>
           {isMenuOpen && (
-            <div className="absolute top-18 x right-0 min-w-[50vw] min-h-[50vh] rounded-b-md bg-bg-primary p-8 z-10 flex flex-col">
+            <div className="absolute top-18 x right-0 min-w-[50vw] min-h-[50vh] rounded-b-md bg-button-grey p-8 z-10 flex flex-col">
               <NavContentsLeft />
               <NavContentsRight />
             </div>
@@ -74,11 +81,11 @@ export default function Navbar() {
         </div>
       </div>
       <div className="hidden md:flex justify-between items-center">
-        <div className="left">
+        <div className="left flex items-center gap-[3rem] border p-4 rounded-full">
           <LogoDesktop />
           <NavContentsLeft />
         </div>
-        <div className="right">
+        <div className="right border p-4 rounded-full">
           <NavContentsRight />
         </div>
       </div>

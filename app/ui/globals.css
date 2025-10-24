@@ -1,8 +1,39 @@
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
+/* @tailwind base;
+@tailwind components; */
 @tailwind utilities;
+
+@layer components {
+  /* Text Colors */
+  .text-primary { color: #0D0146; }
+  .text-heading { color: #F9F9F9; }
+  .text-secondary { color: #252B42; }
+  .text-secondary-alt { color: #000; }
+  .text-tertiary { color: #737373; }
+  .text-tertiary-pink { color: #4F0046; }
+
+  /* Background Colors */
+  .bg-primary { background-color: #FFF; }
+  .bg-button { background-color: #0D0146; }
+  .bg-button-grey { background-color: #E0E0E0; }
+  .bg-button-hover { background-color: #4F0046; }
+  .bg-black-blue { background-color: #270022; }
+  .bg-secondary { background-color: #F9F9F9; }
+  .bg-secondary-alt { background-color: #E5E5E5; }
+  .bg-tertiary { background-color: #FAFAFA; }
+  .bg-input { background-color: #F5F5F5; }
+
+  /* Font Sizes */
+  .text-h1 { font-size: clamp(32px, 8vw, 64px); }
+  .text-sm-h1 { font-size: clamp(24px, 6vw, 32px); }
+  .text-p { font-size: clamp(16px, 3.5vw, 18px); }
+  .text-sm-p { font-size: clamp(14px, 3vw, 16px); }
+  .text-xs-p { font-size: clamp(12px, 2.5vw, 14px); }
+  .text-xxs-p { font-size: clamp(10px, 2vw, 12px); }
+  .text-btn { font-size: clamp(18px, 4vw, 20px); }
+  .text-sub-heading { font-size: clamp(14px, 3vw, 16px); }
+}
 
 :root {
     font-size: 62.5%;

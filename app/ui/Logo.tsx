@@ -6,7 +6,7 @@ export function LogoMobile() {
     <Image
       src={LogoM}
       alt="Tech Ascend Logo"
-      width={150}
+      width={100}
       height={50}
       priority
       className="w-auto h-auto"
@@ -19,7 +19,7 @@ export function LogoDesktop() {
     <Image
       src={LogoM}
       alt="Tech Ascend Logo"
-      width={150}
+      width={100}
       height={50}
       className="w-auto h-auto"
     />
